@@ -1,0 +1,9 @@
+{
+  "name": "humming-app-monorepo",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces"
+  }
+}
