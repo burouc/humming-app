@@ -1,0 +1,65 @@
+<svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bodyGradient" x1="40" y1="30" x2="220" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5C9A4" />
+      <stop offset="1" stop-color="#D99B6A" />
+    </linearGradient>
+    <linearGradient id="earGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F9D9BF" />
+      <stop offset="1" stop-color="#E9AF7F" />
+    </linearGradient>
+    <radialGradient id="bellyGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(140 180) scale(120 100)">
+      <stop stop-color="#FCE6D4" />
+      <stop offset="1" stop-color="#F0BE95" />
+    </radialGradient>
+  </defs>
+  <g filter="url(#shadow)">
+    <ellipse cx="140" cy="210" rx="96" ry="38" fill="#E6C7A9" opacity="0.4" />
+  </g>
+  <g filter="url(#bodyShadow)">
+    <path d="M68 120C68 82 99 48 140 48C181 48 212 82 212 120V178C212 209 183 234 148 234H132C97 234 68 209 68 178V120Z" fill="url(#bodyGradient)" />
+  </g>
+  <g filter="url(#bellyShadow)">
+    <ellipse cx="140" cy="176" rx="70" ry="68" fill="url(#bellyGradient)" />
+  </g>
+  <g filter="url(#earShadow)">
+    <path d="M52 134C52 104 75 80 104 80C114 80 124 86 124 94C124 104 114 116 104 124C86 140 82 156 74 172C66 164 52 152 52 134Z" fill="url(#earGradient)" />
+    <path d="M228 134C228 104 205 80 176 80C166 80 156 86 156 94C156 104 166 116 176 124C194 140 198 156 206 172C214 164 228 152 228 134Z" fill="url(#earGradient)" />
+  </g>
+  <path d="M112 126C112 118 118 112 126 112H154C162 112 168 118 168 126V150C168 166 156 178 140 178C124 178 112 166 112 150V126Z" fill="#D78E5A" />
+  <path d="M108 128C108 116 120 106 136 106H144C160 106 172 116 172 128C172 132 170 136 166 140C160 146 150 150 140 150C130 150 120 146 114 140C110 136 108 132 108 128Z" fill="#8B5B3A" opacity="0.3" />
+  <circle cx="116" cy="134" r="6" fill="#5A3C2A" />
+  <circle cx="164" cy="134" r="6" fill="#5A3C2A" />
+  <path d="M132 150C132 150 128 164 128 176C128 188 134 196 140 196C146 196 152 188 152 176C152 164 148 150 148 150H132Z" fill="#F5E8D8" />
+  <path d="M120 174C120 164 126 156 134 154L132 178C132 184 134 188 138 190C130 194 120 186 120 174Z" fill="#F3D7B8" />
+  <path d="M160 174C160 164 154 156 146 154L148 178C148 184 146 188 142 190C150 194 160 186 160 174Z" fill="#F3D7B8" />
+  <path d="M92 182C94 190 98 198 104 204C108 208 104 214 98 214C86 214 76 206 72 194C70 188 74 182 80 182H92Z" fill="#D99B6A" />
+  <path d="M188 182C186 190 182 198 176 204C172 208 176 214 182 214C194 214 204 206 208 194C210 188 206 182 200 182H188Z" fill="#D99B6A" />
+  <g filter="url(#hairShadow)">
+    <path d="M138 70C148 64 162 62 170 70C176 76 182 90 182 98C182 102 180 106 176 108C172 102 166 98 156 96C144 94 134 96 124 102C120 98 118 94 118 90C118 80 126 74 138 70Z" fill="#B77249" />
+    <path d="M122 86C118 84 116 80 116 76C116 68 124 60 136 56C140 60 142 66 142 72C142 76 140 80 134 84C130 86 126 86 122 86Z" fill="#B77249" />
+  </g>
+  <defs>
+    <filter id="shadow" x="24" y="172" width="232" height="96" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+    </filter>
+    <filter id="bodyShadow" x="48" y="38" width="184" height="216" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="4" />
+      <feGaussianBlur stdDeviation="8" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" />
+      <feBlend in2="SourceGraphic" result="shape" />
+    </filter>
+    <filter id="bellyShadow" x="50" y="102" width="180" height="160" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+    <filter id="earShadow" x="32" y="70" width="216" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="6" />
+      <feGaussianBlur stdDeviation="8" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0" />
+      <feBlend in2="SourceGraphic" result="shape" />
+    </filter>
+    <filter id="hairShadow" x="108" y="50" width="84" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+  </defs>
+</svg>
