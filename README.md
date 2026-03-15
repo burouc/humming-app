@@ -1,45 +1,36 @@
-# HUMM
+# HUMM (Next.js)
 
-A playful minimal mobile app concept that encourages preschoolers to hum along with a friendly baby mammoth companion. The project is split into a TypeScript React frontend and a TypeScript Node.js backend.
+A full-stack Next.js app for a playful preschool humming experience. The client UI and server endpoints live in one repository.
 
-## Structure
+## Tech stack
 
-- `frontend/` – Vite + React + TypeScript UI implementing the HUMM concept art and interactive rewards.
-- `backend/` – Express server with basic session tracking endpoints to support the UI prototype.
+- Next.js App Router
+- React + TypeScript
+- Route Handlers for server-side API endpoints
+- Zod for request validation
 
-## Frontend
-
-### Scripts
-
-```bash
-npm install --prefix frontend
-npm run dev --prefix frontend
-npm run build --prefix frontend
-npm run lint --prefix frontend
-```
-
-The development server runs on port `5173` by default. The UI is optimized for mobile breakpoints, offering soft pastel colors, a dancing 3D-style mammoth illustration, animated musical notes, humming progress feedback, and banana rewards.
-
-## Backend
-
-### Scripts
+## Getting started
 
 ```bash
-npm install --prefix backend
-npm run dev --prefix backend
-npm run build --prefix backend
-npm run start --prefix backend
-npm run lint --prefix backend
+npm install
+npm run dev
 ```
 
-The backend exposes a lightweight Express API:
+Open `http://localhost:3000`.
 
-- `GET /health` – Service health check.
-- `POST /sessions` – Record a humming session (`{ durationMs, bananasEarned }`).
-- `GET /sessions` – Retrieve stored sessions for the runtime.
+## Available scripts
 
-## Development Notes
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+```
 
-- The monorepo root `package.json` enables npm workspaces for shared dependency management.
-- Static assets for the mammoth, bananas, and settings gear are hand-crafted SVGs tailored to the HUMM visual style.
-- No persistent database is included; the backend keeps data in memory for rapid prototyping.
+## API endpoints
+
+- `GET /api/health` – Basic health response.
+- `GET /api/sessions` – List in-memory humming sessions.
+- `POST /api/sessions` – Create a session with `{ durationMs, bananasEarned }`.
+
+> Session data is intentionally in-memory for prototype speed.
